@@ -1,0 +1,134 @@
+#main{
+  width: 100%;
+  background-color: white;
+}
+
+.border{
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
+}
+
+#title{
+  font-size: 35px;
+  text-align: center;
+  font-family: sans-serif, Helvetica, Arial;
+ }
+
+.title{
+  font-size: 15px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  animation-name: transimg;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-direction: alternate;
+ }
+#box1{
+  background-color: SteelBlue;
+  animation-name: color1;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  
+}
+#box2{
+  background-color: YellowGreen;
+  animation-name: color2;
+  animation-duration: 2005ms;
+  animation-iteration-count: infinite; 
+}
+#img-div{
+  background-color: Gold;
+  margin: 30px;
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  animation-name: color3;
+  animation-duration: 2010ms;
+  animation-iteration-count: infinite;
+}
+
+#img-caption{
+  padding:20px 20px;
+  font-size: 18px;
+  font-family: sans-serif, Helvetica, Arial;
+  text-align: center;
+}
+
+#tribute-info, .wiki{
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+#tribute-info p{
+  text-align: center;
+}
+.timeline{
+  line-height: 25px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.wiki{
+  text-align: center;  
+}
+
+#box1, #box2{
+  display: flex;
+  align-content: center;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+
+}
+@keyframes color1{
+  0%{
+    background-color: SkyBlue;
+    background-color: rgba(70, 130, 180, 0.2);
+    
+  }
+  100%{
+    background-color: rgba(70, 130, 180, 1);
+  }
+}
+
+@keyframes color2{
+  0%{
+    background-color: PaleGreen;
+    background-color: rgba(154, 205, 50, 0.2);
+  }
+  100%{
+    background-color: rgba(154, 205, 50, 1);
+  }
+}
+
+@keyframes color3{
+  0%{
+    background-color: LightYellow;
+    background-color: rgba(255, 215, 0, 0.2);
+  }
+  100%{
+    background-color: rgba(255, 215, 0, 1);
+  }
+}
+
+@keyframes transimg{
+  0% {
+    transform: scale(1.1);
+}
+  100% {
+    transform: scale(0.8);
+  }
+}
